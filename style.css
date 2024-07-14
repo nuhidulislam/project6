@@ -1,0 +1,301 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+                    /* banner section style start here */
+
+.banner-section{
+  height: 400px;
+  width: 100%;
+ 
+  display: flex;
+  background: #FCEEF1;
+}
+.banner-text{
+
+  width: 50%;
+  height: 250px;
+  margin:50px 100px 60px 40px ;
+  box-sizing: border-box;
+ 
+}
+
+.banner-text h1{
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.banner-text p{
+  color: #656464;
+  margin: 20px 0px;
+}
+
+
+.btn-primary{
+  padding: 15px 20px;
+  border-radius: 20px;
+  background: #E55473;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: 1s;
+
+ 
+}
+.btn-primary:hover{
+  transform: translateY(-10px);
+}
+
+.banner-img{
+  width: 50%;
+  height: 400px;
+
+}
+.img-banner{
+  height: 400px;
+  
+}
+
+
+
+/*               feature section style start here */
+
+.feature-heading{
+  height: 80px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.flower-container{
+  display: flex;
+  width: 80%;
+  margin: 0px auto;
+  justify-content: space-between;
+}
+
+
+.flower-card{
+  justify-content: center;
+  background: #F2DEE7;
+  border-radius: 50% 50% 0px 0px;
+}
+
+.flower-card a{
+  text-align: center;
+  justify-content: center;
+  display: block;
+  margin: 20px auto;
+}
+
+.img{
+  width: 300px;
+  height: 300px;
+  display: block;
+}
+
+
+.icon-container{
+  display: flex;
+  width: 80%;
+  margin: 0px auto;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  justify-content: space-between;
+  background: #F4F4F4;
+  padding: 20px 40px;
+  border-radius: 20px;
+}
+
+
+.first-icon img{
+  display: block;
+  margin: 5px auto;
+}
+
+
+
+/* hot-dail-section */
+.hot-dail-section{
+  display: flex;
+  height: 500px;
+  background: #FEF6F8;
+  margin-bottom: 30px;
+}
+
+.hot-dail-text{
+  width: 60%;
+  margin: 200px 50px 200px 200px;
+}
+
+.hot-dail-text p{
+  margin: 15px 0px;
+}
+
+.hot-dail-img{
+  width: 40%;
+  margin: 40px 50px 50px 50px;
+}
+
+
+/* instragram section  style start here */
+
+.instragram-heading{
+ text-align: center;
+}
+
+.instragram-heading h1{
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.instragram-img{
+  display: flex;
+  width: 90%;
+  margin: 0px auto;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+.img-card img{
+  width: 250px;
+  height: 350px; 
+}
+
+/* subscribe-section start here */
+.subscribe{
+  background-image: url(image/subscribes.png);
+  width: 90%;
+  height: 380px;
+  margin: 0px auto;
+  margin-bottom: 100px;
+  border-radius: 20px;
+  border: 2px solid red;
+  
+}
+
+
+.subscribe-text{
+  
+  width: 80%;
+  margin: 0px auto;
+  margin-top: 100px;
+  text-align: center;
+}
+.subscribe-text h1{
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subscribe-text input[type="email"]{
+  
+  height: 50px;
+  width: 70%;
+  padding: 20px 20px;
+  border-radius: 20px;
+  border: none;
+}
+
+/* footer section start here */
+
+.footer-container{
+  width: 100%;
+  height: 300px;
+  background: #000;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.footer-text{
+  text-align: center;
+  width: 60%;
+  height: 150px;
+ align-items: center;
+}
+
+.footer-text h1{
+  font-size: 40px;
+  color: red;
+}
+
+.footer-text p{
+  padding: 20px 5px;
+}
+
+
+
+
+
+
+/* responsive website */
+.hide{
+  display: none;
+}
+
+
+@media screen and (max-width: 576px) {
+  .banner-section{
+    flex-direction: column;
+    margin: 0px 0px;
+    height: 800px;
+   
+    
+  }
+  .banner-img{
+    width: 90%;
+    display: block;
+    margin: 0px auto;
+  }
+  .banner-text{
+    width: 85%;
+  }
+/* feature section */
+
+.flower-container{
+  flex-direction: column;
+}
+
+.flower-card{
+  margin: 20px 15px;
+}
+
+
+/* hot dail section */
+.hot-dail-section{
+  flex-direction: column;
+  height: 650px;
+}
+
+.hot-dail-text{
+ width: 100%;
+ margin: 0px 0px;
+ padding: 20px 20px;
+ 
+}
+
+
+.hot-dail-img{
+  width: 100%;
+  margin: 0px 0px;
+  padding: 20px 20px;
+}
+
+/* instragram-image-section-start here */
+.instragram-img{
+  display: grid;
+  grid-template-columns: auto auto;
+  width: calc(100% - 40px);
+  margin: 20px 0px;
+}
+}
